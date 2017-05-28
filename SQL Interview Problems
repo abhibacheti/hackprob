@@ -1,0 +1,8 @@
+*******************************
+SQL Interview Problems
+*******************************
+Problem 1: You have one table Employee(id, salary) and you have to find the second highest salary for each employee
+Solution:
+select id, max(salary) from customers c1 
+where salary = (select distinct salary from customers c2 where c1.id = c2.id order by salary desc limit 1,1)
+group by id;
