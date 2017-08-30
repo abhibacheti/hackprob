@@ -1,7 +1,6 @@
 public class OddDisvisorOfN{
 
-  public static int primeFactors(int n)
-	    {
+  public static int primeFactors(int n) {
 	    	Map<Integer, Integer> count = new HashMap();
 	    	int noOfOddFactors = 1;
 	        // Print the number of 2s that divide n
